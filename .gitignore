@@ -24,3 +24,6 @@
 *.knit.md
 .Rproj.user/
 /doc.Rmd
+
+# Temporary admin directory
+/scratch/
