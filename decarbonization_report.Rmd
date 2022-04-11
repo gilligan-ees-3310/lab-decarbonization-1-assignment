@@ -23,15 +23,9 @@ if (!dir.exists(data_dir)) dir.create(data_dir)
 
 library(pacman)
 
-# Some lab computers fail to load tidyverse
-# because bindr is not installed.
-# This will prevent such errors.
-if (!p_isinstalled(bindr)) p_install(bindr)
-
-
 # Load all of the following packages.
 # Install any missing packages.
-p_load(scales, tidyverse, stringr, janitor)
+p_load(scales, tidyverse, stringr, janitor, kayadata)
 
 # This sets the default style for ggplot
 theme_set(theme_bw(base_size = 15))
